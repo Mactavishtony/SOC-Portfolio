@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gopalakrishnan Palpandi | SOC Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              cyber: {
+                black: '#0a0a0a',
+                dark: '#121212',
+                gray: '#1e1e1e',
+                primary: '#00f0ff',
+                secondary: '#7000ff',
+                accent: '#39ff14',
+                text: '#e0e0e0',
+                muted: '#a0a0a0'
+              }
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #1e1e1e 1px, transparent 1px), linear-gradient(to bottom, #1e1e1e 1px, transparent 1px)",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0a;
+        color: #e0e0e0;
+        overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+      }
+      /* Custom Uiverse-inspired styles */
+      .card-glow {
+        background: rgba(30, 30, 30, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+      }
+      .card-glow:hover {
+        border-color: rgba(0, 240, 255, 0.3);
+        box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+      }
+      .text-glow {
+        text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+      }
+      .btn-cyber {
+        background: linear-gradient(45deg, transparent 5%, #00f0ff 5%);
+        color: #000;
+        box-shadow: 6px 0px 0px #00a0aa;
+        transition: all 0.3s ease;
+      }
+      .btn-cyber:active {
+        box-shadow: 2px 0px 0px #00a0aa;
+        transform: translateX(4px);
+      }
+      
+      /* Scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e1e1e; 
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00f0ff; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
